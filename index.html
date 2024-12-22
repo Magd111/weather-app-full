@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+
+  <body>
+    <nav id="navbar-example2" class="navbar navbar-expand-lg py-5 navbar-light">
+      <div class="container">
+        <a
+          class="navbar-brand montserrat d-flex justify-content-center align-items-center"
+          href="#"
+        >
+          <img src="./image/logo.png" alt="logo" />
+          <div class="text-white text-center">
+            <h1 class="p-0 m-0 h3">Weather</h1>
+            <p class="small-p">tagline goes here</p>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0 gap-1">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white px-4 active"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-4" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="container">
+        <form  class="find-location">
+          <input type="text" placeholder="Find your location..." id="search">
+          <input type="button" value="Find" id="submit">
+        </form>
+
+      </div>
+    </div>
+
+
+    <div class="forecast-table">
+      <div class="container">
+        <div class="forecast-container" id="forecast">
+          
+          <div class="today forecast">
+            <div class="forecast-header" id="today">
+            <div class="day" id="day1"></div>
+            <div class=" date"></div>
+            </div> <!-- .forecast-header -->
+            <div class="forecast-content" id="current">
+            <div class="location"></div>
+            <div class="degree">
+                <div><span class="num"></span><sup>o</sup>C</div>
+              
+                <img class="" id="icon1" src="" alt="icon">
+            
+            </div>
+            <div class="custom"></div>
+            <div class="d-flex">
+              <div class="me-5 d-flex"><img class="icon-umberella" src="./image/icon-umberella.png" alt="icon-umberella"><span id="humidity"></span></div>
+              <div class="me-5 d-flex"><img class="icon-wind" src="./image/icon-wind.png" alt="icon-wind"><span id="wind-speed"></span></div>
+              <div class="me-5 d-flex"><img class="icon-compass" src="./image/icon-compass.png" alt="icon-compass"><span id="wind-dir"></span></div>
+            </div>
+            </div>
+        </div>
+        <div class="forecast nextDay">
+          
+          </div>
+          <div class="forecast nextDay">
+            </div>
+        
+        </div>
+      </div>
+    </div>
+
+    
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form action="#" class="subscribe-form">
+              <input type="text" placeholder="Enter your email to subscribe...">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </footer> <!-- .site-footer -->
+  </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
